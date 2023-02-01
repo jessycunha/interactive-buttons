@@ -1,0 +1,1 @@
+- Criar os botões com as suas classes e ao clicar no botão, o botão teste receberá a classe do botão clicado, através da adição de propriedade pelo JavaScript.

@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+
+    height: 100vh;
+
+    color: #FFF;
+}
+
+.container{
+    flex-grow: 1;
+    padding: 3rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+
+    background-color: #0B0911;
+}
+
+table{
+    border-spacing: 0;
+    width: 100%;
+    font-family: 'Inter', 'sans-serif';
+    border: 3px solid #1C162C;
+}
+
+table thead{
+    background-color: #1C162C;
+    line-height: 50px;
+    font-size: 12px;
+}
+
+table tbody{
+    line-height: 60px;
+    font-size: 14px;
+}
+
+table tbody tr td:first-child{
+    background-color: #1C162C;
+    font-size: 12px;
+    width: 12%;
+}
+
+tr{
+    text-align: center;
+}
+
+aside{
+    flex-basis: 25%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    padding-top: 90px;
+
+    background-color: #130F1E;
+}
+
+.testArea{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0 35px;
+}
+
+#explanations{
+    font-family: 'Inter', 'sans-serif';
+    font-size: large;
+}
+
+h1{
+    font-family: 'Inter', 'sans-serif';
+    font-weight: bold;
+}
+
+p{
+    font-family: 'Roboto', 'sans-serif';
+}
+
+#buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* BOTÕES */
+button{
+    border-radius: 2rem;
+    height: 35px;
+    padding: 20px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+
+    color: #FFF;
+    border: none;
+}
+
+.loadingImg{
+    width: 2rem;
+    height: 2rem;
+    animation: spin 1000ms infinite linear;
+}
+
+.movableImg{
+    width: 1rem;
+    height: 1rem;
+}
+
+
+.primary{
+    background-color: #8257E5;
+}
+.secondary{
+    background-color: #3C3748;
+}
+.tertiary{
+    background-color: transparent;
+}
+:focus{
+    border: 1px solid rgb(156, 156, 156);
+}
+
+
+.default{
+    cursor: pointer;
+}
+
+.hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.hover:hover{
+    opacity:0.5;
+}
+
+.focus{
+    border: 1px solid lightgray;
+    cursor: pointer;
+}
+.focus:focus{
+    border: 2px solid lightgray;
+}
+
+.disabled{
+    opacity: 0.60;
+    cursor: not-allowed;
+}
+
+.loading{
+    cursor: progress;
+}
+
+.movable{
+    cursor: move;
+}
+
+@keyframes spin{
+    from{
+        transform: rotate(360deg);
+    }
+    to{
+        transform: rotate(0deg);
+    }
+}
+
